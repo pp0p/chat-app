@@ -9,7 +9,7 @@ module.exports = async () => {
     .then(() => console.log("Successfully connected to database  ..."))
     .catch((err) => {
       if (err) {
-        console.log("database connection failed , err);
+        console.log("database connection failed" , err);
       }
     });
 };
