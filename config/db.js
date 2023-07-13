@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 // add your database url to .env file
 const db_url = process.env.DB_URL;
-
+mongoose.set("strictQuery", false);
 module.exports = async () => {
   await mongoose
     .connect(db_url, { useNewUrlParser: true, useUnifiedTopology: true })
