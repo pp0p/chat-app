@@ -13,7 +13,7 @@ const PORT = process.env.PORT;
 const io = require("socket.io")(http, {
   cors: {
     // add your website link here 
-    origin: "",
+    origin: "*",
   },
 });
 // middleware
